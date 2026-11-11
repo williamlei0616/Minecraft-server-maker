@@ -1,2 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Launcher scripts must keep their own line endings regardless of platform.
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Recorded Mojang responses: never rewrite.
+tests/fixtures/** -text

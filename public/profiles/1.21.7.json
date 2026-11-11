@@ -1,0 +1,275 @@
+{
+  "schema": 1,
+  "id": "1.21.7",
+  "jarSha1": "05e4b48fbc01f0385adb74bcff9751d34552486c",
+  "javaMajor": 21,
+  "dataVersion": 4438,
+  "launch": {
+    "bundler": true,
+    "nogui": "--nogui",
+    "options": [
+      "--bonusChest",
+      "--demo",
+      "--eraseCache",
+      "--forceUpgrade",
+      "--help",
+      "--initSettings",
+      "--jfrProfile",
+      "--nogui",
+      "--pidFile",
+      "--port",
+      "--recreateRegionFiles",
+      "--safeMode",
+      "--serverId",
+      "--universe",
+      "--world"
+    ]
+  },
+  "properties": [
+    {
+      "key": "accepts-transfers",
+      "default": "false"
+    },
+    {
+      "key": "allow-flight",
+      "default": "false"
+    },
+    {
+      "key": "allow-nether",
+      "default": "true"
+    },
+    {
+      "key": "broadcast-console-to-ops",
+      "default": "true"
+    },
+    {
+      "key": "broadcast-rcon-to-ops",
+      "default": "true"
+    },
+    {
+      "key": "bug-report-link",
+      "default": ""
+    },
+    {
+      "key": "difficulty",
+      "default": "easy"
+    },
+    {
+      "key": "enable-command-block",
+      "default": "false"
+    },
+    {
+      "key": "enable-jmx-monitoring",
+      "default": "false"
+    },
+    {
+      "key": "enable-query",
+      "default": "false"
+    },
+    {
+      "key": "enable-rcon",
+      "default": "false"
+    },
+    {
+      "key": "enable-status",
+      "default": "true"
+    },
+    {
+      "key": "enforce-secure-profile",
+      "default": "true"
+    },
+    {
+      "key": "enforce-whitelist",
+      "default": "false"
+    },
+    {
+      "key": "entity-broadcast-range-percentage",
+      "default": "100"
+    },
+    {
+      "key": "force-gamemode",
+      "default": "false"
+    },
+    {
+      "key": "function-permission-level",
+      "default": "2"
+    },
+    {
+      "key": "gamemode",
+      "default": "survival"
+    },
+    {
+      "key": "generate-structures",
+      "default": "true"
+    },
+    {
+      "key": "generator-settings",
+      "default": "{}"
+    },
+    {
+      "key": "hardcore",
+      "default": "false"
+    },
+    {
+      "key": "hide-online-players",
+      "default": "false"
+    },
+    {
+      "key": "initial-disabled-packs",
+      "default": ""
+    },
+    {
+      "key": "initial-enabled-packs",
+      "default": "vanilla"
+    },
+    {
+      "key": "level-name",
+      "default": "world"
+    },
+    {
+      "key": "level-seed",
+      "default": ""
+    },
+    {
+      "key": "level-type",
+      "default": "minecraft:normal"
+    },
+    {
+      "key": "log-ips",
+      "default": "true"
+    },
+    {
+      "key": "max-chained-neighbor-updates",
+      "default": "1000000"
+    },
+    {
+      "key": "max-players",
+      "default": "20"
+    },
+    {
+      "key": "max-tick-time",
+      "default": "60000"
+    },
+    {
+      "key": "max-world-size",
+      "default": "29999984"
+    },
+    {
+      "key": "motd",
+      "default": "A Minecraft Server"
+    },
+    {
+      "key": "network-compression-threshold",
+      "default": "256"
+    },
+    {
+      "key": "online-mode",
+      "default": "true"
+    },
+    {
+      "key": "op-permission-level",
+      "default": "4"
+    },
+    {
+      "key": "pause-when-empty-seconds",
+      "default": "60"
+    },
+    {
+      "key": "player-idle-timeout",
+      "default": "0"
+    },
+    {
+      "key": "prevent-proxy-connections",
+      "default": "false"
+    },
+    {
+      "key": "pvp",
+      "default": "true"
+    },
+    {
+      "key": "query.port",
+      "default": "25565"
+    },
+    {
+      "key": "rate-limit",
+      "default": "0"
+    },
+    {
+      "key": "rcon.password",
+      "default": ""
+    },
+    {
+      "key": "rcon.port",
+      "default": "25575"
+    },
+    {
+      "key": "region-file-compression",
+      "default": "deflate"
+    },
+    {
+      "key": "require-resource-pack",
+      "default": "false"
+    },
+    {
+      "key": "resource-pack",
+      "default": ""
+    },
+    {
+      "key": "resource-pack-id",
+      "default": ""
+    },
+    {
+      "key": "resource-pack-prompt",
+      "default": ""
+    },
+    {
+      "key": "resource-pack-sha1",
+      "default": ""
+    },
+    {
+      "key": "server-ip",
+      "default": ""
+    },
+    {
+      "key": "server-port",
+      "default": "25565"
+    },
+    {
+      "key": "simulation-distance",
+      "default": "10"
+    },
+    {
+      "key": "spawn-monsters",
+      "default": "true"
+    },
+    {
+      "key": "spawn-protection",
+      "default": "16"
+    },
+    {
+      "key": "sync-chunk-writes",
+      "default": "true"
+    },
+    {
+      "key": "text-filtering-config",
+      "default": ""
+    },
+    {
+      "key": "text-filtering-version",
+      "default": "0"
+    },
+    {
+      "key": "use-native-transport",
+      "default": "true"
+    },
+    {
+      "key": "view-distance",
+      "default": "10"
+    },
+    {
+      "key": "white-list",
+      "default": "false"
+    }
+  ],
+  "volatile": []
+}

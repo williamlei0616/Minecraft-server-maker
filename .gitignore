@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+.next-*/
+out/
+dist/
+.out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs and OS/editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local environment and scratch files
+.env
+.env.*
+.tmp-*
+coverage/
+
+# Internal design and planning material (kept locally, not part of the repo)
+docs/
+design/
+DESIGN.md
+PRODUCT.md
+.impeccable/
