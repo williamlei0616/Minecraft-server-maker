@@ -1,0 +1,35 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: ['Update versions and profiles']
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: mc-server-maker-wlei
+          channelId: live
