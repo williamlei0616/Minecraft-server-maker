@@ -1,0 +1,14 @@
+dist/
+node_modules/
+.out/
+docs/
+tests/fixtures/
+public/versions.json
+package-lock.json
+# Launcher script templates are exact strings (CRLF/LF matter); never reformat.
+src/core/scripts.ts
+.impeccable/
+.next/
+out/
+.next-*/
+design/

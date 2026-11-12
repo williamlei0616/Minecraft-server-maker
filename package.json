@@ -1,0 +1,42 @@
+{
+  "name": "minecraft-server-maker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pick options, download a ready-to-run vanilla Minecraft server bundle.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "vitest run",
+    "typecheck": "next typegen && tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "versions": "node scripts/build-versions.mjs",
+    "profiles": "node scripts/build-profiles.mjs",
+    "bundle": "tsx tools/make-bundle.ts",
+    "e2e": "tsx tools/e2e-start.ts"
+  },
+  "dependencies": {
+    "jszip": "^3.10.2",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vite": "^8.3.7",
+    "vitest": "^4.1.12"
+  }
+}

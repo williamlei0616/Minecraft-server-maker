@@ -1,0 +1,77 @@
+name: CI
+
+# Every push and pull request: the code checks on Windows, Linux and macOS (the start scripts
+# are real shell scripts, so each platform runs them), then a real end-to-end run of a generated
+# bundle against Mojang's services.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Checks (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --ignore-scripts
+
+      - run: npm run typecheck
+      - run: npm run lint
+      # The unit tests include tests/scripts, which run the real start.sh (and start.bat on
+      # Windows) against a local stand-in for Mojang's name lookup and a fake java.
+      - run: npm test
+      - run: npm run build
+        env:
+          PAGES_BASE: /Minecraft-server-maker
+
+      - name: Formatting
+        if: matrix.os == 'ubuntu-latest'
+        run: npx prettier --check src tests tools scripts
+
+  e2e:
+    name: End to end (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    needs: checks
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - run: npm ci --ignore-scripts
+
+      # Builds a bundle, runs its start script for real (download from Mojang, sha1 check, name
+      # lookups, start) and checks the files it wrote. The EULA is not accepted, so no world is made.
+      - run: npm run e2e

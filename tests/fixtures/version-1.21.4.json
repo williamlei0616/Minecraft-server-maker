@@ -1,0 +1,15 @@
+{
+  "id": "1.21.4",
+  "type": "release",
+  "downloads": {
+    "server": {
+      "sha1": "4707d00eb834b446575d89a61a11b5d548d8c001",
+      "size": 56880250,
+      "url": "https://piston-data.mojang.com/v1/objects/4707d00eb834b446575d89a61a11b5d548d8c001/server.jar"
+    }
+  },
+  "javaVersion": {
+    "component": "java-runtime-delta",
+    "majorVersion": 21
+  }
+}

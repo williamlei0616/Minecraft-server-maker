@@ -1,0 +1,74 @@
+name: Update versions and profiles
+
+# 1. Refresh public/versions.json from Mojang's public manifest.
+# 2. For any version without a current profile, run that version's real server jar once with
+#    --initSettings (no world, no EULA acceptance) and record public/profiles/<id>.json.
+# 3. Commit both together, so a version is never listed without its profile.
+#
+# On any failure nothing is committed: the site keeps the previous consistent data.
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: versions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # Each supported jar needs Java 17, 21 or 25. setup-java exposes JAVA_HOME_<n>_X64
+      # for every version installed, which scripts/build-profiles.mjs picks up.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: |
+            17
+            21
+            25
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Fetch versions from Mojang
+        run: node scripts/build-versions.mjs
+
+      - name: Record profiles for new versions
+        run: node scripts/build-profiles.mjs
+
+      - name: Check every listed version has a current profile
+        run: node scripts/build-profiles.mjs --check
+
+      - name: Unit tests (data invariants included)
+        run: npm test
+
+      # The scripts leave files untouched when nothing real changed, so any difference
+      # here is a real change.
+      - name: Commit if changed
+        run: |
+          if [ -z "$(git status --porcelain -- public/versions.json public/profiles)" ]; then
+            echo "nothing changed, nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/versions.json public/profiles
+          git commit -m "chore: update versions and profiles"
+          git push
+        # NOTE: pushes made with GITHUB_TOKEN do not trigger other workflows. A deploy
+        # workflow must be started by `workflow_run` on this workflow, or by a
+        # PAT/App token. Decide there; do not rely on the push here.

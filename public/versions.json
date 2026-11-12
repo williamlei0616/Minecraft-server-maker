@@ -1,0 +1,417 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-11T15:18:33.426Z",
+  "latest": {
+    "release": "26.3",
+    "snapshot": "26.4-snapshot-7"
+  },
+  "versions": [
+    {
+      "id": "26.4-snapshot-7",
+      "type": "snapshot",
+      "releaseTime": "2026-11-03T13:08:56+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/0870c02432ef2391ba7c586c3e113e98406aea20/server.jar",
+        "sha1": "0870c02432ef2391ba7c586c3e113e98406aea20",
+        "size": 63476160
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.4-snapshot-6",
+      "type": "snapshot",
+      "releaseTime": "2026-10-27T13:40:29+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/a022ed5cfa7e7f8a52c91b21ecf5a976b5a516f9/server.jar",
+        "sha1": "a022ed5cfa7e7f8a52c91b21ecf5a976b5a516f9",
+        "size": 63440656
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.4-snapshot-5",
+      "type": "snapshot",
+      "releaseTime": "2026-10-20T12:15:06+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/ed041232700614aeaaf72a6ea88b7f58ca3f8e4a/server.jar",
+        "sha1": "ed041232700614aeaaf72a6ea88b7f58ca3f8e4a",
+        "size": 62548082
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.4-snapshot-4",
+      "type": "snapshot",
+      "releaseTime": "2026-10-13T12:05:46+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/46cf02cd84c4fe3417c094d2edb778df8722fe3d/server.jar",
+        "sha1": "46cf02cd84c4fe3417c094d2edb778df8722fe3d",
+        "size": 62483987
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.4-snapshot-3",
+      "type": "snapshot",
+      "releaseTime": "2026-10-06T12:54:26+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/2d89c95c030e635387448f332961074ce1adbb4b/server.jar",
+        "sha1": "2d89c95c030e635387448f332961074ce1adbb4b",
+        "size": 62458029
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.4-snapshot-2",
+      "type": "snapshot",
+      "releaseTime": "2026-09-29T11:32:57+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/e6cac6e2fa35d5847e60dede721ec75f7a28c34d/server.jar",
+        "sha1": "e6cac6e2fa35d5847e60dede721ec75f7a28c34d",
+        "size": 62330081
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.4-snapshot-1",
+      "type": "snapshot",
+      "releaseTime": "2026-09-22T13:38:53+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/1c5ef8ced87763278a406812e7f0932384c3bb44/server.jar",
+        "sha1": "1c5ef8ced87763278a406812e7f0932384c3bb44",
+        "size": 62324106
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.3",
+      "type": "release",
+      "releaseTime": "2026-09-15T11:23:02+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c/server.jar",
+        "sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+        "size": 62294556
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.2",
+      "type": "release",
+      "releaseTime": "2026-06-16T12:03:33+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/823e2250d24b3ddac457a60c92a6a941943fcd6a/server.jar",
+        "sha1": "823e2250d24b3ddac457a60c92a6a941943fcd6a",
+        "size": 60894273
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.1.2",
+      "type": "release",
+      "releaseTime": "2026-04-09T10:12:23+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51/server.jar",
+        "sha1": "97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51",
+        "size": 60417480
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.1.1",
+      "type": "release",
+      "releaseTime": "2026-04-01T09:06:36+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/49c8195703ad0ba4f0a4efbccfd85a4a8ca57431/server.jar",
+        "sha1": "49c8195703ad0ba4f0a4efbccfd85a4a8ca57431",
+        "size": 60417481
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.1",
+      "type": "release",
+      "releaseTime": "2026-03-24T12:11:04+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/3872a7f07a1a595e651aef8b058dfc2bb3772f46/server.jar",
+        "sha1": "3872a7f07a1a595e651aef8b058dfc2bb3772f46",
+        "size": 60417588
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "1.21.11",
+      "type": "release",
+      "releaseTime": "2025-12-09T12:23:30+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/64bb6d763bed0a9f1d632ec347938594144943ed/server.jar",
+        "sha1": "64bb6d763bed0a9f1d632ec347938594144943ed",
+        "size": 56327581
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21.10",
+      "type": "release",
+      "releaseTime": "2025-10-07T09:17:23+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/95495a7f485eedd84ce928cef5e223b757d2f764/server.jar",
+        "sha1": "95495a7f485eedd84ce928cef5e223b757d2f764",
+        "size": 58642415
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21.9",
+      "type": "release",
+      "releaseTime": "2025-09-30T11:58:43+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/11e54c2081420a4d49db3007e66c80a22579ff2a/server.jar",
+        "sha1": "11e54c2081420a4d49db3007e66c80a22579ff2a",
+        "size": 58638725
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21.8",
+      "type": "release",
+      "releaseTime": "2025-07-17T12:04:02+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/6bce4ef400e4efaa63a13d5e6f6b500be969ef81/server.jar",
+        "sha1": "6bce4ef400e4efaa63a13d5e6f6b500be969ef81",
+        "size": 57555044
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21.7",
+      "type": "release",
+      "releaseTime": "2025-06-30T09:32:16+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/05e4b48fbc01f0385adb74bcff9751d34552486c/server.jar",
+        "sha1": "05e4b48fbc01f0385adb74bcff9751d34552486c",
+        "size": 57556704
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21.6",
+      "type": "release",
+      "releaseTime": "2025-06-17T11:10:28+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/6e64dcabba3c01a7271b4fa6bd898483b794c59b/server.jar",
+        "sha1": "6e64dcabba3c01a7271b4fa6bd898483b794c59b",
+        "size": 57554576
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21.5",
+      "type": "release",
+      "releaseTime": "2025-03-25T12:14:58+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/e6ec2f64e6080b9b5d9b471b291c33cc7f509733/server.jar",
+        "sha1": "e6ec2f64e6080b9b5d9b471b291c33cc7f509733",
+        "size": 57269758
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21.4",
+      "type": "release",
+      "releaseTime": "2024-12-03T10:12:57+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/4707d00eb834b446575d89a61a11b5d548d8c001/server.jar",
+        "sha1": "4707d00eb834b446575d89a61a11b5d548d8c001",
+        "size": 56880250
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21.3",
+      "type": "release",
+      "releaseTime": "2024-10-23T12:28:15+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/45810d238246d90e811d896f87b14695b7fb6839/server.jar",
+        "sha1": "45810d238246d90e811d896f87b14695b7fb6839",
+        "size": 56122038
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21.2",
+      "type": "release",
+      "releaseTime": "2024-10-22T09:58:55+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/7bf95409b0d9b5388bfea3704ec92012d273c14c/server.jar",
+        "sha1": "7bf95409b0d9b5388bfea3704ec92012d273c14c",
+        "size": 56120171
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21.1",
+      "type": "release",
+      "releaseTime": "2024-08-08T12:24:45+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/59353fb40c36d304f2035d51e7d6e6baa98dc05c/server.jar",
+        "sha1": "59353fb40c36d304f2035d51e7d6e6baa98dc05c",
+        "size": 51627615
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.21",
+      "type": "release",
+      "releaseTime": "2024-06-13T08:24:03+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/450698d1863ab5180c25d7c804ef0fe6369dd1ba/server.jar",
+        "sha1": "450698d1863ab5180c25d7c804ef0fe6369dd1ba",
+        "size": 51623779
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.20.6",
+      "type": "release",
+      "releaseTime": "2024-04-29T12:40:45+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/145ff0858209bcfc164859ba735d4199aafa1eea/server.jar",
+        "sha1": "145ff0858209bcfc164859ba735d4199aafa1eea",
+        "size": 51420480
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.20.5",
+      "type": "release",
+      "releaseTime": "2024-04-23T11:54:12+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/79493072f65e17243fd36a699c9a96b4381feb91/server.jar",
+        "sha1": "79493072f65e17243fd36a699c9a96b4381feb91",
+        "size": 51424012
+      },
+      "javaMajor": 21
+    },
+    {
+      "id": "1.20.4",
+      "type": "release",
+      "releaseTime": "2023-12-07T12:56:20+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/8dd1a28015f51b1803213892b50b7b4fc76e594d/server.jar",
+        "sha1": "8dd1a28015f51b1803213892b50b7b4fc76e594d",
+        "size": 49150256
+      },
+      "javaMajor": 17
+    },
+    {
+      "id": "1.20.3",
+      "type": "release",
+      "releaseTime": "2023-12-04T12:10:32+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/4fb536bfd4a83d61cdbaf684b8d311e66e7d4c49/server.jar",
+        "sha1": "4fb536bfd4a83d61cdbaf684b8d311e66e7d4c49",
+        "size": 49152320
+      },
+      "javaMajor": 17
+    },
+    {
+      "id": "1.20.2",
+      "type": "release",
+      "releaseTime": "2023-09-20T09:02:57+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/5b868151bd02b41319f54c8d4061b8cae84e665c/server.jar",
+        "sha1": "5b868151bd02b41319f54c8d4061b8cae84e665c",
+        "size": 48285806
+      },
+      "javaMajor": 17
+    },
+    {
+      "id": "1.20.1",
+      "type": "release",
+      "releaseTime": "2023-06-12T13:25:51+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar",
+        "sha1": "84194a2f286ef7c14ed7ce0090dba59902951553",
+        "size": 47791053
+      },
+      "javaMajor": 17
+    },
+    {
+      "id": "1.20",
+      "type": "release",
+      "releaseTime": "2023-06-02T08:36:17+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/15c777e2cfe0556eef19aab534b186c0c6f277e1/server.jar",
+        "sha1": "15c777e2cfe0556eef19aab534b186c0c6f277e1",
+        "size": 47787288
+      },
+      "javaMajor": 17
+    },
+    {
+      "id": "1.19.4",
+      "type": "release",
+      "releaseTime": "2023-03-14T12:56:18+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/8f3112a1049751cc472ec13e397eade5336ca7ae/server.jar",
+        "sha1": "8f3112a1049751cc472ec13e397eade5336ca7ae",
+        "size": 47515675
+      },
+      "javaMajor": 17
+    },
+    {
+      "id": "1.19.3",
+      "type": "release",
+      "releaseTime": "2022-12-07T08:17:18+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar",
+        "sha1": "c9df48efed58511cdd0213c56b9013a7b5c9ac1f",
+        "size": 47162712
+      },
+      "javaMajor": 17
+    },
+    {
+      "id": "1.19.2",
+      "type": "release",
+      "releaseTime": "2022-08-05T11:57:05+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar",
+        "sha1": "f69c284232d7c7580bd89a5a4931c3581eae1378",
+        "size": 45609512
+      },
+      "javaMajor": 17
+    },
+    {
+      "id": "1.19.1",
+      "type": "release",
+      "releaseTime": "2022-07-27T09:25:33+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/8399e1211e95faa421c1507b322dbeae86d604df/server.jar",
+        "sha1": "8399e1211e95faa421c1507b322dbeae86d604df",
+        "size": 45609936
+      },
+      "javaMajor": 17
+    },
+    {
+      "id": "1.19",
+      "type": "release",
+      "releaseTime": "2022-06-07T09:42:18+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar",
+        "sha1": "e00c4052dac1d59a1188b2aa9d5a87113aaf1122",
+        "size": 45538778
+      },
+      "javaMajor": 17
+    },
+    {
+      "id": "1.18.2",
+      "type": "release",
+      "releaseTime": "2022-02-28T10:42:45+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar",
+        "sha1": "c8f83c5655308435b3dcf03c06d9fe8740a77469",
+        "size": 46592587
+      },
+      "javaMajor": 17
+    }
+  ]
+}

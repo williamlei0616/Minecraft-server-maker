@@ -1,0 +1,18 @@
+Starting net.minecraft.server.Main
+Option                   Description                                         
+------                   -----------                                         
+--bonusChest                                                                 
+--demo                                                                       
+--eraseCache                                                                 
+--forceUpgrade                                                               
+--help                                                                       
+--initSettings           Initializes 'server.properties' and 'eula.txt', then
+                           quits                                             
+--jfrProfile                                                                 
+--nogui                                                                      
+--port <Integer>         (default: -1)                                       
+--safeMode               Loads level with vanilla datapack only              
+--serverId <String>                                                          
+--singleplayer <String>                                                      
+--universe <String>      (default: .)                                        
+--world <String>                                                             
