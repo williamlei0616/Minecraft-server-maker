@@ -1,11 +1,33 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-12T23:39:40.089Z",
+  "generatedAt": "2026-11-17T20:57:36.367Z",
   "latest": {
     "release": "26.3",
-    "snapshot": "26.4-snapshot-8"
+    "snapshot": "26.4-snapshot-10"
   },
   "versions": [
+    {
+      "id": "26.4-snapshot-10",
+      "type": "snapshot",
+      "releaseTime": "2026-11-17T16:02:02+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/d713516162441e0961e1ccfb85d8feeb01b50fd6/server.jar",
+        "sha1": "d713516162441e0961e1ccfb85d8feeb01b50fd6",
+        "size": 63998326
+      },
+      "javaMajor": 25
+    },
+    {
+      "id": "26.4-snapshot-9",
+      "type": "snapshot",
+      "releaseTime": "2026-11-17T12:58:45+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/c969aafcecae7859d466147c6847d63d28d545eb/server.jar",
+        "sha1": "c969aafcecae7859d466147c6847d63d28d545eb",
+        "size": 63998075
+      },
+      "javaMajor": 25
+    },
     {
       "id": "26.4-snapshot-8",
       "type": "snapshot",
