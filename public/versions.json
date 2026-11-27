@@ -1,11 +1,22 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-24T22:28:36.068Z",
+  "generatedAt": "2026-11-27T21:19:39.586Z",
   "latest": {
     "release": "26.3",
-    "snapshot": "26.4-pre-1"
+    "snapshot": "26.4-pre-2"
   },
   "versions": [
+    {
+      "id": "26.4-pre-2",
+      "type": "snapshot",
+      "releaseTime": "2026-11-27T10:00:38+00:00",
+      "jar": {
+        "url": "https://piston-data.mojang.com/v1/objects/63feac922579f0c3e0081bf1c41613de8feb5db9/server.jar",
+        "sha1": "63feac922579f0c3e0081bf1c41613de8feb5db9",
+        "size": 64149075
+      },
+      "javaMajor": 25
+    },
     {
       "id": "26.4-pre-1",
       "type": "snapshot",
